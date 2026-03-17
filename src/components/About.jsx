@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import waterSupplyImg from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA.png";
 
 const checks = [
   "Improved rural water supply and sanitation",
@@ -15,7 +16,7 @@ export default function About() {
         <div className="relative">
           <div className="rounded-xl overflow-hidden h-[420px]">
             <img
-              src="/src/assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA.png"
+              src={waterSupplyImg}
               alt="Water Supply Projects at Karonmajigi Village, Abuja"
               className="w-full h-full object-cover"
             />

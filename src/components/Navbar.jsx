@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import logo from "../assets/edited-logo.png";
 
 const links = [
   { label: "Home", to: "/" },
@@ -44,11 +45,7 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img
-              src="/src/assets/edited-logo.png"
-              alt="WBOF Logo"
-              className="h-[100px] w-auto object-contain"
-            />
+            <img src={logo} alt="WBOF Logo" className="h-[100px] w-auto object-contain" />
           </Link>
 
           {/* Desktop links */}

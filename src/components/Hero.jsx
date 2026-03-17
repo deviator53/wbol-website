@@ -1,4 +1,5 @@
 import { ArrowRight, Play, Droplets, BookOpen, Leaf } from "lucide-react";
+import heroBg from "../assets/Primary pupil enlightenment on good sanitation and hygiene.png";
 
 const cards = [
   {
@@ -24,7 +25,7 @@ export default function Hero() {
       id="home"
       className="text-white py-24 relative overflow-hidden"
       style={{
-        backgroundImage: `url('/src/assets/Primary pupil enlightenment on good sanitation and hygiene.png')`,
+        backgroundImage: `url(${heroBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

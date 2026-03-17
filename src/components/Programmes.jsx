@@ -1,4 +1,7 @@
 import { ArrowRight, Droplets, BookOpen, Leaf } from "lucide-react";
+import waterImg from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA 3.png";
+import educationImg from "../assets/KOBAPE, ABEOKUTA.png";
+import envImg from "../assets/DOWNSTREAM OF USUMA RIVER BEING CLEAN UP.png";
 
 const programmes = [
   {
@@ -8,8 +11,7 @@ const programmes = [
     desc: "Provision of motorized boreholes, hand pump boreholes, and renovation of public latrines in rural communities across Nigeria.",
     areas: ["Apete", "Kuchingoro", "Rubochi"],
     emoji: "🚰",
-    image:
-      "/src/assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA 3.png",
+    image: waterImg,
   },
   {
     icon: <BookOpen size={22} />,
@@ -22,7 +24,7 @@ const programmes = [
       "Western & Southern Nigeria",
     ],
     emoji: "🏫",
-    image: "/src/assets/KOBAPE, ABEOKUTA.png",
+    image: educationImg,
   },
   {
     icon: <Leaf size={22} />,
@@ -31,7 +33,7 @@ const programmes = [
     desc: "River system clean-ups and tree planting to reduce desertification and CO₂ emissions, protecting Nigeria's vital waterways.",
     areas: ["River Usuma, Abuja", "Imo River", "Sokoto River"],
     emoji: "🌿",
-    image: "/src/assets/DOWNSTREAM OF USUMA RIVER BEING CLEAN UP.png",
+    image: envImg,
   },
 ];
 

@@ -1,9 +1,9 @@
-import Hero from '../components/Hero'
-import About from '../components/About'
-import Programmes from '../components/Programmes'
-import FocusAreas from '../components/FocusAreas'
-import MissionVision from '../components/MissionVision'
-import ProjectsSlider from '../components/ProjectsSlider'
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Programmes from "../components/Programmes";
+import FocusAreas from "../components/FocusAreas";
+import MissionVision from "../components/MissionVision";
+import ProjectsSlider from "../components/ProjectsSlider";
 
 export default function Home() {
   return (
@@ -15,5 +15,5 @@ export default function Home() {
       <MissionVision />
       <ProjectsSlider />
     </main>
-  )
+  );
 }

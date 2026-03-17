@@ -1,5 +1,6 @@
 import About from "../components/About";
 import MissionVision from "../components/MissionVision";
+import founderImg from "../assets/founder-image.png";
 
 export default function AboutPage() {
   return (
@@ -39,7 +40,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="w-56 h-56 rounded-2xl overflow-hidden shadow-lg mb-4">
                 <img
-                  src="/src/assets/founder-image.png"
+                  src={founderImg}
                   alt="Walter Bamidele Olatunji"
                   className="w-full h-full object-cover"
                 />

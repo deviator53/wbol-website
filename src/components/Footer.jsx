@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mail, Phone, MapPin } from 'lucide-react'
+import logo from '../assets/edited-logo.png'
 
 const quickLinks = [
   { label: 'Home', to: '/' },
@@ -41,7 +42,7 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <Link to="/" className="inline-block mb-4">
-            <img src="/src/assets/logo.png" alt="WBOF Logo" className="h-16 w-auto object-contain" />
+            <img src={logo} alt="WBOF Logo" className="h-16 w-auto object-contain" />
           </Link>
           <p className="text-white/60 text-xs leading-relaxed">
             Walter Bamidele Olatunji Foundation — making life better for children, women, and
