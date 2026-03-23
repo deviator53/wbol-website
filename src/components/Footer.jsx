@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex justify-center gap-4 flex-wrap">
           <Link to="/contact"
             className="bg-white text-[#39A84F] px-7 py-3 rounded font-bold text-sm hover:-translate-y-0.5 hover:shadow-lg transition-all">
-            Donate Now
+            Send a Message
           </Link>
           <Link to="/contact"
             className="border-2 border-white/70 text-white px-7 py-3 rounded font-semibold text-sm hover:border-white hover:bg-white/10 transition-all">

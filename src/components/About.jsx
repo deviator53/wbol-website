@@ -22,12 +22,6 @@ export default function About() {
             />
           </div>
           {/* Badge */}
-          <div className="absolute -bottom-5 -right-5 bg-[#39A84F] text-white rounded-xl px-6 py-4 text-center shadow-xl shadow-[#39A84F]/30">
-            <div className="text-3xl font-extrabold">NGO</div>
-            <div className="text-xs opacity-90 mt-0.5">
-              Registered Foundation
-            </div>
-          </div>
         </div>
 
         {/* Content side */}

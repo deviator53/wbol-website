@@ -71,12 +71,14 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <Link
-                to="/contact"
-                className="bg-[#39A84F] text-white px-5 py-2 rounded text-sm font-semibold hover:bg-[#2d8a3e] transition-colors"
+              <a
+                href="https://wa.me/2348037871140"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#39A84F] text-white px-5 py-2 rounded text-sm font-semibold hover:bg-[#2d8a3e] transition-colors inline-flex items-center gap-1.5"
               >
-                Donate
-              </Link>
+                Send a Message
+              </a>
             </li>
           </ul>
 
@@ -106,13 +108,15 @@ export default function Navbar() {
                 {l.label}
               </NavLink>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://wa.me/2348037871140"
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setOpen(false)}
               className="mt-3 block text-center bg-[#39A84F] text-white px-5 py-2.5 rounded text-sm font-semibold"
             >
-              Donate
-            </Link>
+              Send a Message
+            </a>
           </div>
         )}
       </nav>

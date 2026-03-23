@@ -7,7 +7,10 @@ export default function GetInvolved() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // placeholder — wire up to backend/email service
+    const text = encodeURIComponent(
+      `Hello WBOF,\n\nName: ${form.name}\nEmail: ${form.email}\nInterest: ${form.interest || 'General enquiry'}\n\n${form.message}`
+    )
+    window.open(`https://wa.me/2348037871140?text=${text}`, '_blank')
     setSent(true)
   }
 

@@ -4,6 +4,7 @@ import Programmes from "../components/Programmes";
 import FocusAreas from "../components/FocusAreas";
 import MissionVision from "../components/MissionVision";
 import ProjectsSlider from "../components/ProjectsSlider";
+import FounderSpeech from "../components/FounderSpeech";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <FocusAreas />
       <MissionVision />
       <ProjectsSlider />
+      <FounderSpeech />
     </main>
   );
 }

@@ -44,7 +44,7 @@ export default function Hero() {
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-5">
             Clean Water, <span className="text-[#39A84F]">Better Lives</span>{" "}
-            for Rural Nigeria
+            for Everyone
           </h1>
           <p className="text-white/85 text-base leading-relaxed mb-8 max-w-lg">
             Providing underprivileged communities with access to quality water

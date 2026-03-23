@@ -21,11 +21,7 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-
-      <About />
-      <MissionVision />
-
-      {/* Founder section */}
+{/* Founder section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-5">
           <div className="text-center mb-12">
@@ -118,6 +114,10 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <About />
+      <MissionVision />
+
+      
     </main>
   );
 }

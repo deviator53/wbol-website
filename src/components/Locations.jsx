@@ -44,7 +44,7 @@ export default function Locations() {
         <div className="text-center mb-14">
           <span className="section-label">Where We Work</span>
           <h2 className="section-title">
-            Communities We <span className="text-[#39A84F]">Serve</span>
+            Communities We <span className="text-[#39A84F]">Support</span>
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
             Currently active in communities across Nigeria — with plans to expand our reach
