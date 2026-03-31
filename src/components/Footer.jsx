@@ -7,6 +7,7 @@ const quickLinks = [
   { label: 'About Us', to: '/about' },
   { label: 'Programmes', to: '/programmes' },
   { label: 'Locations', to: '/locations' },
+  { label: 'News & Events', to: '/news' },
   { label: 'Contact', to: '/contact' },
 ]
 
