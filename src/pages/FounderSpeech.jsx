@@ -1,5 +1,5 @@
 import founderImg from "../assets/founder-image.png";
-import waterDayImg from "../assets/water-day.png";
+import waterDayImg from "../assets/water-day.jpg";
 
 const paragraphs = [
   "Today, we gather to honor UN-World Water Day, a moment to reflect on the lifeblood of our planet — water. Water sustains our communities, nourishes our lands, and shapes our future. Yet, it is also a resource under threat, and its fair distribution remains a challenge that calls for collective action.",

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import founderImg from "../assets/founder-image.png";
-import waterDayImg from "../assets/water-day.png";
+import waterDayImg from "../assets/water-day.jpg";
 
 export default function FounderSpeech() {
   return (

@@ -32,7 +32,7 @@ export default function Navbar() {
               <Phone size={12} /> +234 80 3787 1140
             </span>
             <span className="flex items-center gap-1">
-              <Mail size={12} /> info@wbof.org
+              <Mail size={12} /> info@walterbamideleolatunji.com
             </span>
           </div>
           <span>Community &amp; Global Consortia</span>
