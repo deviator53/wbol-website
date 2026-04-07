@@ -18,11 +18,11 @@ export default function FounderSpeech() {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* Images */}
           <div className="flex flex-col gap-4">
-            <div className="rounded-2xl overflow-hidden h-72 shadow-md">
+            <div className="rounded-2xl overflow-hidden shadow-md">
               <img
                 src={waterDayImg}
                 alt="World Water Day 2026"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
             <div className="flex items-center gap-4 bg-[#f4f8f5] rounded-2xl p-4">

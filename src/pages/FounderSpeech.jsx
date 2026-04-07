@@ -32,11 +32,11 @@ export default function FounderSpeechPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-5">
           {/* Featured image */}
-          <div className="rounded-2xl overflow-hidden h-96 shadow-lg mb-10">
+          <div className="rounded-2xl overflow-hidden shadow-lg mb-10">
             <img
               src={waterDayImg}
               alt="World Water Day 2026"
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
 
