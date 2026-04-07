@@ -174,61 +174,63 @@ export default function ProjectsSlider() {
         </div>
 
         {/* Main slider */}
-        <div
-          className="relative rounded-2xl overflow-hidden bg-black"
-          onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
-        >
-          <img
-            key={current}
-            src={p.src}
-            alt={p.title}
-            className="w-full h-[360px] object-cover opacity-90 transition-opacity duration-300"
-          />
+        <div className="max-w-3xl mx-auto">
+          <div
+            className="relative rounded-2xl overflow-hidden bg-black"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
+            <img
+              key={current}
+              src={p.src}
+              alt={p.title}
+              className="w-full h-[360px] object-cover opacity-90 transition-opacity duration-300"
+            />
 
-          {/* Caption overlay */}
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-8 py-6">
-            <div className="flex items-center gap-2 mb-2">
-              <span
-                className={`text-white text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[p.category] || "bg-gray-600"}`}
-              >
-                {p.category}
-              </span>
-              {p.tag && (
+            {/* Caption overlay */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-8 py-6">
+              <div className="flex items-center gap-2 mb-2">
                 <span
-                  className={`text-white text-xs font-semibold px-3 py-1 rounded-full ${tagColors[p.tag]}`}
+                  className={`text-white text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[p.category] || "bg-gray-600"}`}
                 >
-                  {p.tag}
+                  {p.category}
                 </span>
-              )}
+                {p.tag && (
+                  <span
+                    className={`text-white text-xs font-semibold px-3 py-1 rounded-full ${tagColors[p.tag]}`}
+                  >
+                    {p.tag}
+                  </span>
+                )}
+              </div>
+              <p className="text-white font-semibold text-base leading-snug max-w-2xl">
+                {p.title}
+              </p>
+              <p className="text-white/50 text-xs mt-1">
+                {current + 1} / {projects.length}
+              </p>
             </div>
-            <p className="text-white font-semibold text-base leading-snug max-w-2xl">
-              {p.title}
-            </p>
-            <p className="text-white/50 text-xs mt-1">
-              {current + 1} / {projects.length}
-            </p>
-          </div>
 
-          {/* Prev / Next */}
-          <button
-            onClick={prev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-black/50 hover:bg-[#39A84F] text-white rounded-full flex items-center justify-center transition-colors"
-            aria-label="Previous"
-          >
-            <ChevronLeft size={22} />
-          </button>
-          <button
-            onClick={next}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-black/50 hover:bg-[#39A84F] text-white rounded-full flex items-center justify-center transition-colors"
-            aria-label="Next"
-          >
-            <ChevronRight size={22} />
-          </button>
+            {/* Prev / Next */}
+            <button
+              onClick={prev}
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-black/50 hover:bg-[#39A84F] text-white rounded-full flex items-center justify-center transition-colors"
+              aria-label="Previous"
+            >
+              <ChevronLeft size={22} />
+            </button>
+            <button
+              onClick={next}
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-black/50 hover:bg-[#39A84F] text-white rounded-full flex items-center justify-center transition-colors"
+              aria-label="Next"
+            >
+              <ChevronRight size={22} />
+            </button>
+          </div>
         </div>
 
         {/* Thumbnail strip */}
-        <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
+        <div className="max-w-3xl mx-auto flex gap-2 mt-4 overflow-x-auto pb-2">
           {projects.map((img, i) => (
             <button
               key={i}

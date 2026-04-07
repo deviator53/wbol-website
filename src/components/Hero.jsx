@@ -1,5 +1,13 @@
+import { useEffect, useState } from "react";
 import { ArrowRight, Play, Droplets, BookOpen, Leaf } from "lucide-react";
-import heroBg from "../assets/Primary pupil enlightenment on good sanitation and hygiene.png";
+import slider1 from "../assets/slider1.jpg";
+import slider2 from "../assets/slider2.jpg";
+import slider3 from "../assets/slider3.jpg";
+import slider4 from "../assets/slider4.jpg";
+import slider5 from "../assets/slider5.jpg";
+import slider6 from "../assets/slider6.jpg";
+
+const slides = [slider1, slider2, slider3, slider4, slider5, slider6];
 
 const cards = [
   {
@@ -20,18 +28,33 @@ const cards = [
 ];
 
 export default function Hero() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <section
-      id="home"
-      className="text-white py-24 relative overflow-hidden"
-      style={{
-        backgroundImage: `url(${heroBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      {/* Gradient overlay on top of the image */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#1a2e3b]/90 via-[#426780]/80 to-[#2d6e45]/85 pointer-events-none" />
+    <section id="home" className="text-white py-24 relative overflow-hidden">
+      {/* Slider backgrounds */}
+      {slides.map((src, i) => (
+        <div
+          key={i}
+          className="absolute inset-0 transition-opacity duration-1000"
+          style={{
+            backgroundImage: `url(${src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: i === current ? 1 : 0,
+          }}
+        />
+      ))}
+
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1a2e3b]/60 via-[#426780]/40 to-[#2d6e45]/50 pointer-events-none" />
       {/* Decorative circles */}
       <div className="absolute top-[-60px] right-[-80px] w-[480px] h-[480px] bg-[#39A84F]/10 rounded-full pointer-events-none" />
       <div className="absolute bottom-[-80px] left-[-60px] w-[320px] h-[320px] bg-white/5 rounded-full pointer-events-none" />
@@ -73,6 +96,20 @@ export default function Hero() {
                 </div>
                 <div className="text-xs text-white/70 mt-0.5">{s.label}</div>
               </div>
+            ))}
+          </div>
+
+          {/* Slide dots */}
+          <div className="flex gap-2 mt-6">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === current ? "w-6 bg-[#39A84F]" : "w-1.5 bg-white/40"
+                }`}
+                aria-label={`Go to slide ${i + 1}`}
+              />
             ))}
           </div>
         </div>

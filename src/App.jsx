@@ -14,7 +14,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="pt-[100px]">
+      <div className="pt-[140px] md:pt-[100px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
