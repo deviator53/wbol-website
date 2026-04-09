@@ -1,6 +1,6 @@
 import About from "../components/About";
 import MissionVision from "../components/MissionVision";
-import founderImg from "../assets/founder-image.png";
+import founderImg from "../assets/founder-image.jpg";
 
 export default function AboutPage() {
   return (
