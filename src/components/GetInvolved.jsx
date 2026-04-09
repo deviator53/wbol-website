@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Send, ArrowRight } from "lucide-react";
+import { Send } from "lucide-react";
 
 export default function GetInvolved() {
   const [form, setForm] = useState({
@@ -9,14 +9,30 @@ export default function GetInvolved() {
     message: "",
   });
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const text = encodeURIComponent(
-      `Hello WBOF,\n\nName: ${form.name}\nEmail: ${form.email}\nInterest: ${form.interest || "General enquiry"}\n\n${form.message}`,
-    );
-    window.open(`https://wa.me/2348037871140?text=${text}`, "_blank");
-    setSent(true);
+    setSubmitting(true);
+    setError(null);
+    try {
+      const res = await fetch("https://formspree.io/f/mbdpepvw", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setSent(true);
+        setForm({ name: "", email: "", interest: "", message: "" });
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -114,6 +130,12 @@ export default function GetInvolved() {
               <p className="text-gray-500 text-sm mt-1">
                 We'll get back to you shortly.
               </p>
+              <button
+                onClick={() => setSent(false)}
+                className="mt-6 text-[#39A84F] text-sm font-semibold hover:underline"
+              >
+                Send another message
+              </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -182,11 +204,23 @@ export default function GetInvolved() {
                 />
               </div>
 
+              {error && (
+                <p className="text-red-500 text-xs text-center">{error}</p>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-[#39A84F] text-white py-3 rounded-lg font-semibold text-sm hover:bg-[#2d8a3e] transition-colors flex items-center justify-center gap-2"
+                disabled={submitting}
+                className="w-full bg-[#39A84F] text-white py-3 rounded-lg font-semibold text-sm hover:bg-[#2d8a3e] transition-colors flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Send Message <Send size={15} />
+                {submitting ? (
+                  "Sending..."
+                ) : (
+                  <>
+                    {" "}
+                    Send Message <Send size={15} />{" "}
+                  </>
+                )}
               </button>
             </form>
           )}

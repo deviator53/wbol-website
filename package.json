@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "@sanity/client": "^7.20.0",
     "@sanity/image-url": "^2.1.0",
     "lucide-react": "^0.344.0",
