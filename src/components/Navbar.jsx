@@ -28,9 +28,9 @@ export default function Navbar() {
       <div className="bg-[#1a2e3b] text-gray-300 text-xs py-2">
         <div className="max-w-6xl mx-auto px-5 flex justify-between items-center flex-wrap gap-2">
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1">
+            {/* <span className="flex items-center gap-1">
               <Phone size={12} /> +234 80 3787 1140
-            </span>
+            </span> */}
             <span className="flex items-center gap-1">
               <Mail size={12} /> info@walterbamideleolatunji.com
             </span>

@@ -22,9 +22,9 @@ export default function Footer() {
     <footer className="bg-[#1a2e3b] text-white">
       {/* CTA Banner */}
       <div className="bg-[#39A84F] py-12 text-center">
-        <h2 className="text-2xl font-bold mb-3">Help Us Reach More Communities</h2>
+        <h2 className="text-2xl font-bold mb-3">How Can We Help Your Community?</h2>
         <p className="text-white/85 text-sm max-w-md mx-auto mb-6">
-          Your support funds boreholes, classroom renovations, and river clean-ups across Nigeria.
+          We partner with communities to deliver boreholes, classroom renovations, and river clean-ups across Nigeria.
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <Link to="/contact"
@@ -81,12 +81,12 @@ export default function Footer() {
           <ul className="space-y-3">
             <li className="flex items-start gap-2 text-white/55 text-xs">
               <Mail size={13} className="mt-0.5 flex-shrink-0 text-[#39A84F]" />
-              info@wbof.org
+              info@walterbamidelefoundation.com
             </li>
-            <li className="flex items-start gap-2 text-white/55 text-xs">
+            {/* <li className="flex items-start gap-2 text-white/55 text-xs">
               <Phone size={13} className="mt-0.5 flex-shrink-0 text-[#39A84F]" />
               +234 000 000 0000
-            </li>
+            </li> */}
             <li className="flex items-start gap-2 text-white/55 text-xs">
               <MapPin size={13} className="mt-0.5 flex-shrink-0 text-[#39A84F]" />
               Nigeria (FCT, Oyo, Imo, Sokoto)

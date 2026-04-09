@@ -1,18 +1,23 @@
-import { useState } from 'react'
-import { Send, ArrowRight } from 'lucide-react'
+import { useState } from "react";
+import { Send, ArrowRight } from "lucide-react";
 
 export default function GetInvolved() {
-  const [form, setForm] = useState({ name: '', email: '', interest: '', message: '' })
-  const [sent, setSent] = useState(false)
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    interest: "",
+    message: "",
+  });
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const text = encodeURIComponent(
-      `Hello WBOF,\n\nName: ${form.name}\nEmail: ${form.email}\nInterest: ${form.interest || 'General enquiry'}\n\n${form.message}`
-    )
-    window.open(`https://wa.me/2348037871140?text=${text}`, '_blank')
-    setSent(true)
-  }
+      `Hello WBOF,\n\nName: ${form.name}\nEmail: ${form.email}\nInterest: ${form.interest || "General enquiry"}\n\n${form.message}`,
+    );
+    window.open(`https://wa.me/2348037871140?text=${text}`, "_blank");
+    setSent(true);
+  };
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -25,9 +30,9 @@ export default function GetInvolved() {
             <span className="text-[#39A84F]">Making a Difference</span>
           </h2>
           <p className="text-gray-500 text-sm leading-relaxed mb-8">
-            Whether you want to volunteer, partner, or donate — every
-            contribution helps us bring clean water, education, and
-            environmental care to more communities across Nigeria.
+            Whether you want to volunteer, partner, or simply reach out — we are
+            a charity-driven foundation bringing clean water, education, and
+            environmental care to communities across Nigeria at no cost.
           </p>
 
           <div className="space-y-4">
@@ -41,11 +46,11 @@ export default function GetInvolved() {
                     height="32"
                     fill="rgba(57,168,79,1)"
                   >
-                    <path d="M9.3349 11.5022L11.5049 11.5027C13.9902 11.5027 16.0049 13.5174 16.0049 16.0027L9.00388 16.0018L9.00488 17.0027L17.0049 17.0019V16.0027C17.0049 14.9202 16.6867 13.8996 16.1188 13.0019L19.0049 13.0027C20.9972 13.0027 22.7173 14.1679 23.521 15.8541C21.1562 18.9747 17.3268 21.0027 13.0049 21.0027C10.2436 21.0027 7.90437 20.4121 6.00447 19.3779L6.00592 10.0737C7.25147 10.2521 8.39122 10.7583 9.3349 11.5022ZM4.00488 9.00268C4.51772 9.00268 4.94039 9.38872 4.99816 9.88606L5.00488 10.0018V19.0027C5.00488 19.555 4.55717 20.0027 4.00488 20.0027H2.00488C1.4526 20.0027 1.00488 19.555 1.00488 19.0027V10.0027C1.00488 9.45039 1.4526 9.00268 2.00488 9.00268H4.00488ZM13.6513 3.57806L14.0046 3.93183L14.3584 3.57806C15.3347 2.60175 16.9177 2.60175 17.894 3.57806C18.8703 4.55437 18.8703 6.13728 17.894 7.11359L14.0049 11.0027L10.1158 7.11359C9.13948 6.13728 9.13948 4.55437 10.1158 3.57806C11.0921 2.60175 12.675 2.60175 13.6513 3.57806Z"></path>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z M11 7H9V5h2v2zm4 0h-2V5h2v2z M12 21.5C6.21 21.5 1.5 16.79 1.5 11S6.21.5 12 .5 22.5 5.21 22.5 11 17.79 21.5 12 21.5zM8 10l4-4 4 4h-3v4h-2v-4z" />
                   </svg>
                 ),
-                title: "Donate",
-                desc: "Fund a borehole, classroom renovation, or tree planting drive.",
+                title: "Free Charity Services",
+                desc: "All our programmes — boreholes, school renovations, clean-ups — are provided free to communities in need.",
               },
               {
                 emoji: (
@@ -155,7 +160,7 @@ export default function GetInvolved() {
                   className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#39A84F] bg-white text-gray-600"
                 >
                   <option value="">Select an option</option>
-                  <option value="donate">Donate</option>
+                  <option value="charity">Request Free Charity Service</option>
                   <option value="volunteer">Volunteer</option>
                   <option value="partner">Partner with WBOF</option>
                   <option value="info">Request Information</option>

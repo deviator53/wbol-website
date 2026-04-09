@@ -42,7 +42,7 @@ export default function AboutPage() {
                 />
               </div>
               <h3 className="font-bold text-[#1a2e3b] text-base">
-                Walter Bamidele Olatunji
+                Walter Bamidele Olatunji, MSc, FNAH
               </h3>
               <p className="text-[#39A84F] text-sm font-medium mt-1">
                 Founder & Executive Director
@@ -80,35 +80,50 @@ export default function AboutPage() {
                 was the Deputy Director – Hydrologist; Head of Dam Safety; Head
                 of Technical Cooperation and Partnership; Coordinator of Public
                 Private Partnership for water investment; and Chief of Staff to
-                the General Manager.
+                the General Manager. He supported the GM in day to day,
+                efficient management of the organization.
               </p>
               <p>
                 At Japan International Cooperation Agency (JICA) as In-House
                 Water Consultant, he contributed immensely to the review and
                 update of Nigeria's National Water Resources Master Plan,
                 supervised the provision of rural water supply to over 200
-                communities across ten states in Nigeria, and co-formulated the
-                reduction of non-revenue water programme at FCTWB, Abuja. He
-                also led the development and installation of 1.2MW solar
-                electricity at Lower Usuma Dam.
+                communities across ten states in Nigeria, technical support to
+                RWSSC-NWRI, co-formulated the reduction of non-revenue water
+                programme at FCTWB, Abuja; and the development and installation
+                of 1.2MW solar electricity at Lower Usuma Dam — these and many
+                more were part of his indelible signature in the Water Sector of
+                Nigeria.
               </p>
               <p>
-                Walter is currently responsible for the development and
-                provision of regional hydrological water bulletins, technical
-                notes and annual water balance for the Niger River Basin —
-                actively involved in GIZ/NBA WEFE Nexus, FREXUS, Flood Early
-                Warning Alerts, ITTASS and PIDACC programmes.
+                Walter is currently responsible for the development of forecast
+                and early warning, provision of regional hydrological water
+                bulletins, technical notes and annual water balance for the
+                Niger River Basin. He is supporting the basin in many capacities
+                — in the design, evaluation and review of programmes and
+                recommendations for improvements when necessary. He is actively
+                involved in the formulation and implementation of GIZ/NBA WEFE
+                Nexus, FREXUS, Floods/Droughts Forecast and Early Warning,
+                Improving IWRM knowledge-based management and governance
+                (ITTASS), PIDACC, and serves as Coordinator of FAO–NBA IWRM &
+                Inland Fisheries Project in the Basin.
               </p>
               <p>
-                He has a special interest in community development, provision of
-                rural water supply and sanitation, primary education aids, P2P
-                knowledge transfer, and capacity building of WASH personnel at
-                local and national levels.
+                He has a special interest in contributing to community
+                development activities, provision of rural water supply and
+                sanitation, primary education aids, P2P knowledge transfer, and
+                capacity building of WASH personnel at local and national
+                levels.
               </p>
               <p className="text-xs text-gray-400 italic">
-                Alumnus of FUNNAB & IHE Institute for Water Education,
-                Netherlands. Fellow of NAH, NWSA, IAHS, IWRA, and RWSN
-                International.
+                Alumnus of FUNNAB and IHE Institute for Water Education,
+                Netherlands. Fellow of the Nigerian Association of
+                Hydrogeologists (NAH), Nigerian Water Supply Association (NWSA),
+                International Association of Hydrological Sciences (IAHS),
+                International Water Resources Association (IWRA), and Rural
+                Water Supply Network International (RWSN), to mention a few. He
+                is happily married to Barr. (Mrs) Adejoke Olatunji and blessed
+                with children.
               </p>
             </div>
           </div>
