@@ -9,8 +9,14 @@ import Contact from './pages/Contact'
 import News from './pages/News'
 import NewsPost from './pages/NewsPost'
 import FounderSpeech from './pages/FounderSpeech'
+import Maintenance from './pages/Maintenance'
+
+// Set to true to show maintenance page, false to restore the site
+const MAINTENANCE_MODE = true
 
 export default function App() {
+  if (MAINTENANCE_MODE) return <Maintenance />
+
   return (
     <BrowserRouter>
       <Navbar />
