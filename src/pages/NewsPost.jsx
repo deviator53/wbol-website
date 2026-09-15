@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { client, urlFor } from "../lib/sanity";
-import { Calendar, ArrowLeft, Tag } from "lucide-react";
+import { Calendar, ArrowLeft } from "lucide-react";
 
 const QUERY = `*[_type == "post" && slug.current == $slug][0] {
-  title, category, date, coverImage, excerpt, body
+  title, category, date, coverImage, coverVideo, coverVideoFile{ asset->{ url } }, excerpt,
+  body[] {
+    ...,
+    _type == "videoUpload" => {
+      ...,
+      file { asset->{ url } }
+    }
+  }
 }`;
 
 const categoryStyles = {
@@ -12,6 +19,36 @@ const categoryStyles = {
   event: { label: "Event", cls: "bg-[#39A84F] text-white" },
   project: { label: "Project Update", cls: "bg-orange-500 text-white" },
 };
+
+function toEmbedUrl(url) {
+  if (!url) return null;
+  // YouTube
+  const yt = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?/]+)/);
+  if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
+  // Vimeo
+  const vm = url.match(/vimeo\.com\/(\d+)/);
+  if (vm) return `https://player.vimeo.com/video/${vm[1]}`;
+  return url;
+}
+
+function VideoEmbed({ url, caption }) {
+  const embedUrl = toEmbedUrl(url);
+  if (!embedUrl) return null;
+  return (
+    <figure className="my-6">
+      <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+        <iframe
+          src={embedUrl}
+          className="absolute inset-0 w-full h-full rounded-xl"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title={caption || 'Video'}
+        />
+      </div>
+      {caption && <figcaption className="text-center text-xs text-gray-400 mt-2">{caption}</figcaption>}
+    </figure>
+  );
+}
 
 function renderBody(blocks) {
   if (!blocks) return null;
@@ -24,6 +61,28 @@ function renderBody(blocks) {
           alt=""
           className="rounded-xl my-6 w-full object-cover"
         />
+      );
+    }
+    if (block._type === "videoEmbed") {
+      return <VideoEmbed key={i} url={block.url} caption={block.caption} />;
+    }
+    if (block._type === "videoUpload") {
+      const fileUrl = block.file?.asset?.url;
+      if (!fileUrl) return null;
+      return (
+        <figure key={i} className="my-6">
+          <video
+            src={fileUrl}
+            controls
+            className="w-full rounded-xl"
+            preload="metadata"
+          />
+          {block.caption && (
+            <figcaption className="text-center text-xs text-gray-400 mt-2">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
       );
     }
     if (block._type !== "block") return null;
@@ -88,14 +147,39 @@ export default function NewsPost() {
     <main>
       {/* Cover */}
       <div className="h-[75vh] md:h-[85vh] bg-gradient-to-br from-[#1a2e3b] to-[#426780] overflow-hidden relative">
-        {post.coverImage && (
-          <img
-            src={urlFor(post.coverImage).width(1200).height(900).url()}
-            alt={post.title}
-            className="w-full h-full object-cover object-top opacity-60"
+        {post.coverVideo ? (
+          <div className="absolute inset-0 flex items-center justify-center p-6 md:p-16">
+            <div className="relative w-full max-w-4xl" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src={toEmbedUrl(post.coverVideo)}
+                className="absolute inset-0 w-full h-full rounded-xl"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title={post.title}
+              />
+            </div>
+          </div>
+        ) : post.coverVideoFile?.asset?.url ? (
+          <video
+            src={post.coverVideoFile.asset.url}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover opacity-70"
           />
+        ) : (
+          <>
+            {post.coverImage && (
+              <img
+                src={urlFor(post.coverImage).width(1200).height(900).url()}
+                alt={post.title}
+                className="w-full h-full object-cover object-top opacity-60"
+              />
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          </>
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
       </div>
 
       {/* Content */}
