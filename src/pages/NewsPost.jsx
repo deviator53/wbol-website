@@ -54,6 +54,7 @@ function renderBody(blocks) {
   if (!blocks) return null;
   return blocks.map((block, i) => {
     if (block._type === "image") {
+      if (!block.asset) return null;
       return (
         <img
           key={i}
@@ -170,7 +171,7 @@ export default function NewsPost() {
           />
         ) : (
           <>
-            {post.coverImage && (
+            {post.coverImage?.asset && (
               <img
                 src={urlFor(post.coverImage).width(1200).height(900).url()}
                 alt={post.title}
