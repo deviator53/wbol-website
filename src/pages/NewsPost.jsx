@@ -147,7 +147,7 @@ export default function NewsPost() {
   return (
     <main>
       {/* Cover */}
-      <div className="h-[75vh] md:h-[85vh] bg-gradient-to-br from-[#1a2e3b] to-[#426780] overflow-hidden relative">
+      <div className="h-[55vh] md:h-[65vh] bg-gradient-to-br from-[#1a2e3b] to-[#426780] overflow-hidden relative">
         {post.coverVideo ? (
           <div className="absolute inset-0 flex items-center justify-center p-6 md:p-16">
             <div className="relative w-full max-w-4xl" style={{ paddingBottom: '56.25%' }}>
@@ -173,9 +173,9 @@ export default function NewsPost() {
           <>
             {post.coverImage?.asset && (
               <img
-                src={urlFor(post.coverImage).width(1200).height(900).url()}
+                src={urlFor(post.coverImage).width(1600).height(700).fit('crop').crop('center').url()}
                 alt={post.title}
-                className="w-full h-full object-cover object-top opacity-60"
+                className="w-full h-full object-cover object-center opacity-60"
               />
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />

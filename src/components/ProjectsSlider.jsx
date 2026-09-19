@@ -22,6 +22,8 @@ import img18 from "../assets/DOWNSTREAM OF USUMA RIVER BEING CLEAN UP.png";
 import img19 from "../assets/CLEAN UP BY WALTER OLATUNJI FOUNDATION AT THE SOKOTO RIVER DOWN STREAM OF RIVER NIGER AT NIGERIA PORTION OF THE BASIN.png";
 import img20 from "../assets/1395585115937.jpg";
 import img21 from "../assets/20170219_171320.jpg";
+import img22 from "../assets/school-student.jpeg";
+import video1 from "../assets/student-video.mp4";
 
 const projects = [
   {
@@ -127,6 +129,19 @@ const projects = [
   },
   { src: img20, title: "WBOF Field Activity", category: "Field Work" },
   { src: img21, title: "WBOF Field Activity", category: "Field Work" },
+  {
+    src: img22,
+    title:
+      "Supporting Primary Schools with Writing Materials - Honourable Olajiire Akintunde Memorial High School,Ibadan",
+    category: "Education",
+  },
+  {
+    src: video1,
+    type: "video",
+    title:
+      "Supporting Primary Schools with Writing Materials — Honourable Olajiire Akintunde Memorial High School, Ibadan",
+    category: "Education",
+  },
 ];
 
 const tagColors = { Before: "bg-orange-500", After: "bg-[#39A84F]" };
@@ -143,6 +158,8 @@ const categoryColors = {
 export default function ProjectsSlider() {
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
+
+  const isVideo = (item) => item.type === "video";
 
   const next = useCallback(
     () => setCurrent((c) => (c === projects.length - 1 ? 0 : c + 1)),
@@ -180,12 +197,27 @@ export default function ProjectsSlider() {
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
           >
-            <img
-              key={current}
-              src={p.src}
-              alt={p.title}
-              className="w-full h-[360px] object-cover opacity-90 transition-opacity duration-300"
-            />
+            {isVideo(p) ? (
+              <video
+                key={current}
+                src={p.src}
+                controls
+                className="w-full h-[360px] object-cover bg-black"
+                onPlay={() => setPaused(true)}
+                onPause={() => setPaused(false)}
+                onEnded={() => {
+                  setPaused(false);
+                  next();
+                }}
+              />
+            ) : (
+              <img
+                key={current}
+                src={p.src}
+                alt={p.title}
+                className="w-full h-[360px] object-cover opacity-90 transition-opacity duration-300"
+              />
+            )}
 
             {/* Caption overlay */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-8 py-6">
@@ -241,11 +273,17 @@ export default function ProjectsSlider() {
                   : "border-transparent opacity-50 hover:opacity-80"
               }`}
             >
-              <img
-                src={img.src}
-                alt={img.title}
-                className="w-full h-full object-cover"
-              />
+              {isVideo(img) ? (
+                <div className="w-full h-full bg-[#1a2e3b] flex items-center justify-center">
+                  <span className="text-white text-xl">▶</span>
+                </div>
+              ) : (
+                <img
+                  src={img.src}
+                  alt={img.title}
+                  className="w-full h-full object-cover"
+                />
+              )}
             </button>
           ))}
         </div>
