@@ -10,6 +10,7 @@ import News from './pages/News'
 import NewsPost from './pages/NewsPost'
 import FounderSpeech from './pages/FounderSpeech'
 import Maintenance from './pages/Maintenance'
+import ProgrammeDetail from './pages/ProgrammeDetail'
 
 // Set to true to show maintenance page, false to restore the site
 const MAINTENANCE_MODE = false
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/programmes" element={<Programmes />} />
+          <Route path="/programmes/:slug" element={<ProgrammeDetail />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/news" element={<News />} />

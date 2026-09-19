@@ -1,52 +1,13 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, Droplets, BookOpen, Leaf, PencilLine } from "lucide-react";
-import waterImg from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA 3.png";
-import educationImg from "../assets/KOBAPE, ABEOKUTA.png";
-import envImg from "../assets/DOWNSTREAM OF USUMA RIVER BEING CLEAN UP.png";
-import schoolStudentImg from "../assets/school-student.jpeg";
+import { programmes } from "../data/programmes";
 
-const programmes = [
-  {
-    icon: <Droplets size={22} />,
-    color: "bg-[#426780]",
-    title: "Rural Water Supply & Sanitation",
-    desc: "Provision of motorized boreholes, hand pump boreholes, and renovation of public latrines in rural communities across Nigeria.",
-    areas: ["Apete", "Kuchingoro", "Rubochi"],
-    emoji: "🚰",
-    image: waterImg,
-  },
-  {
-    icon: <BookOpen size={22} />,
-    color: "bg-[#39A84F]",
-    title: "Primary School Education",
-    desc: "Renovating classrooms and providing educational materials — chairs, tables, blackboards, chalks and pencils — for primary school pupils.",
-    areas: [
-      "Northern Nigeria",
-      "Eastern Nigeria",
-      "Western & Southern Nigeria",
-    ],
-    emoji: "🏫",
-    image: educationImg,
-  },
-  {
-    icon: <Leaf size={22} />,
-    color: "bg-[#1a2e3b]",
-    title: "Environment & Capacity Building",
-    desc: "River system clean-ups and tree planting to reduce desertification and CO₂ emissions, protecting Nigeria's vital waterways.",
-    areas: ["River Usuma, Abuja", "Imo River", "Sokoto River"],
-    emoji: "🌿",
-    image: envImg,
-  },
-  {
-    icon: <PencilLine size={22} />,
-    color: "bg-[#39A84F]",
-    title: "Supporting Primary Schools with Writing Materials",
-    desc: "Empowering secondary school students through the supply of writing materials, supporting academic success and reducing barriers to learning.",
-    areas: ["Odo Okun, Arapaja, Odo Ona Kekere, Ibadan, Oyo State"],
-    location: "Honourable Olajiire Akintunde Memorial High School",
-    emoji: "✏️",
-    image: schoolStudentImg,
-  },
-];
+const icons = {
+  "rural-water-supply-sanitation": <Droplets size={22} />,
+  "primary-school-education": <BookOpen size={22} />,
+  "environment-capacity-building": <Leaf size={22} />,
+  "supply-of-school-writing-materials": <PencilLine size={22} />,
+};
 
 export default function Programmes() {
   return (
@@ -66,24 +27,18 @@ export default function Programmes() {
         <div className="grid md:grid-cols-3 gap-7">
           {programmes.map((p) => (
             <div
-              key={p.title}
+              key={p.slug}
               className="bg-white rounded-xl overflow-hidden shadow-sm hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300"
             >
-              {/* Card image area */}
-              <div
-                className={`${p.color} h-48 flex items-center justify-center relative overflow-hidden`}
-              >
-                {p.image ? (
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <span className="text-7xl">{p.emoji}</span>
-                )}
+              {/* Card image */}
+              <div className="h-48 relative overflow-hidden bg-[#1a2e3b]">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute bottom-0 left-5 w-11 h-11 bg-[#39A84F] rounded-t-xl flex items-center justify-center text-white">
-                  {p.icon}
+                  {icons[p.slug]}
                 </div>
               </div>
 
@@ -105,16 +60,19 @@ export default function Programmes() {
                     </span>
                   ))}
                 </div>
+
                 {p.location && (
-                  <p className="text-xs text-[#1a2e3b] font-semibold mb-4">🏫 {p.location}</p>
+                  <p className="text-xs text-[#1a2e3b] font-semibold mb-4">
+                    🏫 {p.location}
+                  </p>
                 )}
 
-                <a
-                  href="#contact"
+                <Link
+                  to={`/programmes/${p.slug}`}
                   className="text-[#39A84F] font-semibold text-sm inline-flex items-center gap-1.5 hover:gap-3 transition-all"
                 >
                   Learn More <ArrowRight size={14} />
-                </a>
+                </Link>
               </div>
             </div>
           ))}
