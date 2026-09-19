@@ -12,8 +12,7 @@ export default function ProgrammesPage() {
           <span className="text-[#7de896] text-xs font-semibold uppercase tracking-widest block mb-3">What We Do</span>
           <h1 className="text-4xl font-extrabold mb-4">Our <span className="text-[#39A84F]">Programmes</span></h1>
           <p className="text-white/75 max-w-xl text-sm leading-relaxed">
-            Three strategic areas of intervention designed to create lasting, sustainable change
-            in rural and semi-urban communities across Nigeria.
+            Empowering communities through donations of clean water access, educational support, and environmental care — gifts that create lasting change across Nigeria.
           </p>
         </div>
       </section>

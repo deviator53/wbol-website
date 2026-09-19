@@ -10,9 +10,7 @@ export default function MissionVision() {
             Empowering Communities Through <span className="text-[#39A84F]">Water & Education</span>
           </h2>
           <p className="text-white/80 leading-relaxed text-sm">
-            To provide underprivileged children with access to quality water supply, sanitation,
-            education, mentorship, and life skills — empowering them to break the cycle of poverty
-            and become leaders in their communities.
+            To empower underprivileged children and communities through donations of clean water, sanitation, education, and life skills — gifting them the foundation to break the cycle of poverty and become leaders in their communities.
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-4">
