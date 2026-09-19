@@ -42,7 +42,7 @@ const areas = [
       </svg>
     ),
     title: "Education",
-    desc: "Classroom renovations and supply of learning materials so every child can learn in a safe, equipped environment.",
+    desc: "Classroom renovations and donation of learning materials so every child can learn in a safe, equipped environment.",
   },
   {
     emoji: (
