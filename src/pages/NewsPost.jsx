@@ -175,7 +175,7 @@ export default function NewsPost() {
               <img
                 src={urlFor(post.coverImage).width(1600).height(700).fit('crop').crop('center').url()}
                 alt={post.title}
-                className="w-full h-full object-cover object-center opacity-60"
+                className="w-full h-full object-cover object-top opacity-60"
               />
             )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
