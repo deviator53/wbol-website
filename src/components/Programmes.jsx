@@ -1,7 +1,8 @@
-import { ArrowRight, Droplets, BookOpen, Leaf } from "lucide-react";
+import { ArrowRight, Droplets, BookOpen, Leaf, PencilLine } from "lucide-react";
 import waterImg from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA 3.png";
 import educationImg from "../assets/KOBAPE, ABEOKUTA.png";
 import envImg from "../assets/DOWNSTREAM OF USUMA RIVER BEING CLEAN UP.png";
+import schoolStudentImg from "../assets/school-student.jpeg";
 
 const programmes = [
   {
@@ -35,6 +36,16 @@ const programmes = [
     emoji: "🌿",
     image: envImg,
   },
+  {
+    icon: <PencilLine size={22} />,
+    color: "bg-[#39A84F]",
+    title: "Supporting Primary Schools with Writing Materials",
+    desc: "Empowering secondary school students through the supply of writing materials, supporting academic success and reducing barriers to learning.",
+    areas: ["Odo Okun, Arapaja, Odo Ona Kekere, Ibadan, Oyo State"],
+    location: "Honourable Olajiire Akintunde Memorial High School",
+    emoji: "✏️",
+    image: schoolStudentImg,
+  },
 ];
 
 export default function Programmes() {
@@ -47,7 +58,7 @@ export default function Programmes() {
             Our <span className="text-[#39A84F]">Programmes</span>
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
-            Three strategic areas of intervention designed to create lasting
+            Our strategic areas of intervention designed to create lasting
             change in rural and semi-urban communities across Nigeria.
           </p>
         </div>
@@ -94,6 +105,9 @@ export default function Programmes() {
                     </span>
                   ))}
                 </div>
+                {p.location && (
+                  <p className="text-xs text-[#1a2e3b] font-semibold mb-4">🏫 {p.location}</p>
+                )}
 
                 <a
                   href="#contact"
