@@ -33,7 +33,7 @@ export default function ProgrammesPage() {
           </p>
           <Link to="/contact"
             className="bg-[#39A84F] text-white px-8 py-3 rounded font-semibold text-sm hover:bg-[#2d8a3e] transition-all inline-flex items-center gap-2">
-            Partner With Us <ArrowRight size={16} />
+    Contact Us <ArrowRight size={16} />
           </Link>
         </div>
       </section>

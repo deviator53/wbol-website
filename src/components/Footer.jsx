@@ -36,12 +36,12 @@ export default function Footer() {
           >
             Send a Message
           </Link>
-          <Link
+          {/* <Link
             to="/contact"
             className="border-2 border-white/70 text-white px-7 py-3 rounded font-semibold text-sm hover:border-white hover:bg-white/10 transition-all"
           >
             Partner With Us
-          </Link>
+          </Link> */}
         </div>
       </div>
 
