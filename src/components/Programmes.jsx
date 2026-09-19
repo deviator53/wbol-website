@@ -6,7 +6,7 @@ const icons = {
   "rural-water-supply-sanitation": <Droplets size={22} />,
   "primary-school-education": <BookOpen size={22} />,
   "environment-capacity-building": <Leaf size={22} />,
-  "supply-of-school-writing-materials": <PencilLine size={22} />,
+  "donation-of-school-writing-materials": <PencilLine size={22} />,
 };
 
 export default function Programmes() {
