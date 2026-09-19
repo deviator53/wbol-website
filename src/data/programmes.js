@@ -74,7 +74,7 @@ We have conducted clean-ups on major rivers including the Usuma, Imo, and Sokoto
     desc: "Empowering students through the donation of writing materials, supporting academic success and reducing barriers to learning.",
     fullDesc: `Many students in public secondary schools lack the basic writing materials needed to participate fully in their education. WBOF bridges this gap through targeted supply drives.
 
-At Honourable Olajiire Akintunde Memorial High School in Ibadan, we supplied writing materials directly to students — pens, notebooks, pencils, and other essentials — ensuring they can focus on learning without the burden of resource scarcity.
+At Honourable Olajiire Akintunde Memorial High School in Ibadan, we donated writing materials directly to students — pens, notebooks, pencils, and other essentials — ensuring they can focus on learning without the burden of resource scarcity.
 
 This initiative reflects our belief that small interventions can make a significant difference in a student's confidence, attendance, and academic performance.`,
     areas: ["Odo Okun, Arapaja, Odo Ona Kekere, Ibadan, Oyo State"],
