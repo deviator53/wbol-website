@@ -147,41 +147,38 @@ export default function NewsPost() {
   return (
     <main>
       {/* Cover */}
-      <div className="h-[55vh] md:h-[65vh] bg-gradient-to-br from-[#1a2e3b] to-[#426780] overflow-hidden relative">
-        {post.coverVideo ? (
-          <div className="absolute inset-0 flex items-center justify-center p-6 md:p-16">
-            <div className="relative w-full max-w-4xl" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src={toEmbedUrl(post.coverVideo)}
-                className="absolute inset-0 w-full h-full rounded-xl"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title={post.title}
-              />
-            </div>
+      {post.coverVideo ? (
+        <div className="bg-gradient-to-br from-[#1a2e3b] to-[#426780] flex items-center justify-center p-6 md:p-16">
+          <div className="relative w-full max-w-4xl" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              src={toEmbedUrl(post.coverVideo)}
+              className="absolute inset-0 w-full h-full rounded-xl"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title={post.title}
+            />
           </div>
-        ) : post.coverVideoFile?.asset?.url ? (
+        </div>
+      ) : post.coverVideoFile?.asset?.url ? (
+        <div className="bg-black">
           <video
             src={post.coverVideoFile.asset.url}
             autoPlay
             muted
             loop
             playsInline
-            className="absolute inset-0 w-full h-full object-cover opacity-70"
+            className="w-full max-h-[70vh] object-contain"
           />
-        ) : (
-          <>
-            {post.coverImage?.asset && (
-              <img
-                src={urlFor(post.coverImage).width(1600).height(700).fit('crop').crop('center').url()}
-                alt={post.title}
-                className="w-full h-full object-cover object-top opacity-60"
-              />
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-          </>
-        )}
-      </div>
+        </div>
+      ) : post.coverImage?.asset ? (
+        <div className="bg-[#1a2e3b] w-full">
+          <img
+            src={urlFor(post.coverImage).width(1600).url()}
+            alt={post.title}
+            className="w-full max-h-[75vh] object-contain object-top"
+          />
+        </div>
+      ) : null}
 
       {/* Content */}
       <section className="py-14 bg-white">
