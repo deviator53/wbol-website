@@ -26,8 +26,7 @@ export default function Footer() {
           How Can We Help Your Community?
         </h2>
         <p className="text-white/85 text-sm max-w-md mx-auto mb-6">
-          We partner with communities to deliver boreholes, classroom
-          renovations, and river clean-ups across Nigeria.
+          We donate boreholes, classroom renovations, and river clean-ups to communities across Nigeria — empowerment gifts at no cost to the people we serve.
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <Link

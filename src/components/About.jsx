@@ -34,9 +34,9 @@ export default function About() {
           <p className="text-gray-500 leading-relaxed mb-6">
             WBOF is primarily established to make life better for everyone —
             especially children, women, and the disadvantaged living in
-            semi-urban and rural areas of Nigeria. We believe every person
-            deserves access to clean water, quality education, and a healthy
-            environment.
+            semi-urban and rural areas of Nigeria. Through donations and gifts of
+            clean water, education, and environmental empowerment, we believe
+            every person deserves to thrive.
           </p>
 
           <ul className="space-y-3 mb-8">

@@ -16,8 +16,8 @@ export default function AboutPage() {
             <span className="text-[#39A84F]">Foundation</span>
           </h1>
           <p className="text-white/75 max-w-xl text-sm leading-relaxed">
-            Established to make life better for everyone — especially children,
-            women, and the disadvantaged in semi-urban and rural Nigeria.
+            Established to make life better for everyone — empowering children,
+            women, and the disadvantaged in semi-urban and rural Nigeria through donations and gifts of support.
           </p>
         </div>
       </section>

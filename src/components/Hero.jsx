@@ -70,9 +70,7 @@ export default function Hero() {
             for Everyone
           </h1>
           <p className="text-white/85 text-base leading-relaxed mb-8 max-w-lg">
-            Providing underprivileged communities with access to quality water
-            supply, sanitation, education, and environmental care — empowering
-            people to break the cycle of poverty.
+            Donating boreholes, classroom renovations, and environmental clean-ups to underprivileged communities — empowering people through gifts of clean water, education, and a healthier environment.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#programmes" className="btn-primary">

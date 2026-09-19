@@ -47,8 +47,8 @@ export default function GetInvolved() {
           </h2>
           <p className="text-gray-500 text-sm leading-relaxed mb-8">
             Whether you want to volunteer, partner, or simply reach out — we are
-            a charity-driven foundation bringing clean water, education, and
-            environmental care to communities across Nigeria at no cost.
+            a charity-driven foundation gifting clean water, education, and
+            environmental empowerment to communities across Nigeria at no cost to them.
           </p>
 
           <div className="space-y-4">
@@ -65,8 +65,8 @@ export default function GetInvolved() {
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z M11 7H9V5h2v2zm4 0h-2V5h2v2z M12 21.5C6.21 21.5 1.5 16.79 1.5 11S6.21.5 12 .5 22.5 5.21 22.5 11 17.79 21.5 12 21.5zM8 10l4-4 4 4h-3v4h-2v-4z" />
                   </svg>
                 ),
-                title: "Free Charity Services",
-                desc: "All our programmes — boreholes, school renovations, clean-ups — are provided free to communities in need.",
+                title: "Gifts to Communities",
+                desc: "All our programmes — boreholes, school renovations, clean-ups — are donated freely to communities in need.",
               },
               {
                 emoji: (
@@ -182,7 +182,7 @@ export default function GetInvolved() {
                   className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#39A84F] bg-white text-gray-600"
                 >
                   <option value="">Select an option</option>
-                  <option value="charity">Request Free Charity Service</option>
+                  <option value="charity">Request Support for My Community</option>
                   <option value="volunteer">Volunteer</option>
                   <option value="partner">Partner with WBOF</option>
                   <option value="info">Request Information</option>

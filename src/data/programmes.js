@@ -29,12 +29,12 @@ export const programmes = [
     slug: "rural-water-supply-sanitation",
     emoji: "🚰",
     title: "Rural Water Supply & Sanitation",
-    desc: "Provision of motorized boreholes, hand pump boreholes, and renovation of public latrines in rural communities across Nigeria.",
-    fullDesc: `Access to clean water is a basic human right. WBOF has been at the forefront of providing sustainable water supply solutions to rural and semi-urban communities across Nigeria.
+    desc: "Donation of motorized boreholes, hand pump boreholes, and renovation of public latrines as gifts to rural communities across Nigeria.",
+    fullDesc: `Access to clean water is a basic human right. WBOF has been at the forefront of donating sustainable water supply solutions to rural and semi-urban communities across Nigeria.
 
-Our water interventions include the installation of motorised boreholes, hand pump boreholes, and the rehabilitation of broken-down water facilities. We also renovate and construct public latrines to improve sanitation conditions.
+Our water gifts include the installation of motorised boreholes, hand pump boreholes, and the rehabilitation of broken-down water facilities. We also donate the renovation and construction of public latrines to improve sanitation conditions.
 
-Every project is community-driven — we work directly with residents, traditional leaders, and local government to ensure facilities are maintained long after we leave.`,
+Every project is community-driven — we work directly with residents, traditional leaders, and local government to ensure these donated facilities are maintained long after we leave.`,
     areas: ["Apete", "Kuchingoro", "Rubochi"],
     image: waterImg,
     gallery: [waterImg, water2, water3, water4, water5, borehole, latrineBefore, latrineAfter],
@@ -43,12 +43,12 @@ Every project is community-driven — we work directly with residents, tradition
     slug: "primary-school-education",
     emoji: "🏫",
     title: "Primary School Education",
-    desc: "Renovating classrooms and providing educational materials — chairs, tables, blackboards, chalks and pencils — for primary school pupils.",
-    fullDesc: `Education is the foundation of lasting change. WBOF invests in the physical and material needs of primary schools that have been neglected in underserved communities.
+    desc: "Donating classroom renovations and educational materials — chairs, tables, blackboards, chalks and pencils — as gifts to primary school pupils.",
+    fullDesc: `Education is the foundation of lasting change. WBOF donates to the physical and material needs of primary schools that have been neglected in underserved communities.
 
-Our education programme covers classroom renovation and rehabilitation, supply of furniture (chairs and tables), provision of blackboards, chalks, pencils, and other learning materials.
+Our education gifts cover classroom renovation and rehabilitation, supply of furniture (chairs and tables), and donation of blackboards, chalks, pencils, and other learning materials.
 
-We have worked in schools across Northern, Eastern, Western, and Southern Nigeria — ensuring that no child has to learn in a dilapidated environment.`,
+We have supported schools across Northern, Eastern, Western, and Southern Nigeria — ensuring that no child has to learn in a dilapidated environment.`,
     areas: ["Northern Nigeria", "Eastern Nigeria", "Western & Southern Nigeria"],
     image: educationImg,
     gallery: [educationImg, classroomA, classroomB, odoBefore, odoAfter, okeBefore, okeAfter, hygiene],
@@ -57,10 +57,10 @@ We have worked in schools across Northern, Eastern, Western, and Southern Nigeri
     slug: "environment-capacity-building",
     emoji: "🌿",
     title: "Environment & Capacity Building",
-    desc: "River system clean-ups and tree planting to reduce desertification and CO₂ emissions, protecting Nigeria's vital waterways.",
-    fullDesc: `Nigeria's environment is under constant threat from pollution, deforestation, and climate change. WBOF takes direct action to protect and restore the natural environment.
+    desc: "Gifting river clean-ups and tree planting to communities to reduce desertification and CO₂ emissions, protecting Nigeria's vital waterways.",
+    fullDesc: `Nigeria's environment is under constant threat from pollution, deforestation, and climate change. WBOF takes direct action to protect and restore the natural environment as a gift to current and future generations.
 
-Our environmental work includes large-scale river clean-up exercises, tree planting campaigns to combat desertification, and capacity building workshops that educate communities on sustainable environmental practices.
+Our environmental donations include large-scale river clean-up exercises, tree planting campaigns to combat desertification, and capacity building workshops that empower communities with sustainable environmental practices.
 
 We have conducted clean-ups on major rivers including the Usuma, Imo, and Sokoto rivers, removing waste and raising awareness about the importance of healthy waterways.`,
     areas: ["River Usuma, Abuja", "Imo River", "Sokoto River"],
@@ -71,12 +71,12 @@ We have conducted clean-ups on major rivers including the Usuma, Imo, and Sokoto
     slug: "donation-of-school-writing-materials",
     emoji: "✏️",
     title: "Donation of School Writing Materials",
-    desc: "Empowering students through the donation of writing materials, supporting academic success and reducing barriers to learning.",
-    fullDesc: `Many students in public secondary schools lack the basic writing materials needed to participate fully in their education. WBOF bridges this gap through targeted supply drives.
+    desc: "Empowering students through the donation of writing materials — a gift that supports academic success and removes barriers to learning.",
+    fullDesc: `Many students in public secondary schools lack the basic writing materials needed to participate fully in their education. WBOF bridges this gap through targeted donation drives.
 
-At Honourable Olajiire Akintunde Memorial High School in Ibadan, we donated writing materials directly to students — pens, notebooks, pencils, and other essentials — ensuring they can focus on learning without the burden of resource scarcity.
+At Honourable Olajiire Akintunde Memorial High School in Ibadan, we donated writing materials directly to students — pens, notebooks, pencils, and other essentials — a gift ensuring they can focus on learning without the burden of resource scarcity.
 
-This initiative reflects our belief that small interventions can make a significant difference in a student's confidence, attendance, and academic performance.`,
+This empowerment initiative reflects our belief that small donations can make a significant difference in a student's confidence, attendance, and academic performance.`,
     areas: ["Odo Okun, Arapaja, Odo Ona Kekere, Ibadan, Oyo State"],
     location: "Honourable Olajiire Akintunde Memorial High School",
     image: schoolStudentImg,
