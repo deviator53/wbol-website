@@ -24,7 +24,7 @@ export default function ProgrammeDetail() {
         <img
           src={programme.image}
           alt={programme.title}
-          className="w-full max-h-[65vh] object-cover object-top opacity-80"
+          className="w-full max-h-[65vh] object-cover object-center opacity-80"
         />
       </div>
 
@@ -74,17 +74,22 @@ export default function ProgrammeDetail() {
             ))}
           </div>
 
-          {programme.video && (
+          {programme.videos?.length > 0 && (
             <div className="mt-8">
               <h2 className="text-xl font-bold text-[#1a2e3b] mb-4">
-                Programme <span className="text-[#39A84F]">Video</span>
+                Programme <span className="text-[#39A84F]">Videos</span>
               </h2>
-              <video
-                src={programme.video}
-                controls
-                className="w-full rounded-xl"
-                preload="metadata"
-              />
+              <div className="space-y-4">
+                {programme.videos.map((src, i) => (
+                  <video
+                    key={i}
+                    src={src}
+                    controls
+                    className="w-full rounded-xl"
+                    preload="metadata"
+                  />
+                ))}
+              </div>
             </div>
           )}
         </div>
