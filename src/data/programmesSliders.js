@@ -4,19 +4,11 @@ import img1 from "../assets/Primary pupil enlightenment on good sanitation and h
 import img2 from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA.png";
 import img3 from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA 2.png";
 import img4 from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA 3.png";
-import img5 from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA 4.png";
-import img6 from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA 5.png";
+
 import img7 from "../assets/Motorised Borehole Repaired by WBOF at Dutse Alhaji Abuja.png";
-import img8 from "../assets/Community Latrine Rehabilitation at Rubochi Abuja b4.png";
-import img9 from "../assets/Community Latrine Rehabilitation at Rubochi Abuja aft.png";
-import img10 from "../assets/CLASSROOMS REHABILITATION AT IJEUN, ABEOKUTA.png";
-import img11 from "../assets/CLASSROOMS REHABILITATION PROJECT AT IJEUN, ABEOKUTA.png";
-import img12 from "../assets/KOBAPE, ABEOKUTA.png";
-import img13 from "../assets/Odo Ona LEA primary school, Ibadan b4.png";
-import img14 from "../assets/Odo Ona LEA primary school, Ibadan aft.png";
-import img15 from "../assets/Primary School, Oke Ado, Ibadan b4.png";
-import img16 from "../assets/Primary School, Oke Ado, Ibadan aft.png";
-import img17 from "../assets/Sensitization of women on good hygiene and sanitation by WBOF.png";
+
+
+
 import img18 from "../assets/DOWNSTREAM OF USUMA RIVER BEING CLEAN UP.png";
 import img19 from "../assets/CLEAN UP BY WALTER OLATUNJI FOUNDATION AT THE SOKOTO RIVER DOWN STREAM OF RIVER NIGER AT NIGERIA PORTION OF THE BASIN.png";
 import img20 from "../assets/1395585115937.jpg";
@@ -57,77 +49,13 @@ export const projects = [
     title: "Water Supply Projects at Karonmajigi Village, Abuja",
     category: "Water Supply",
   },
-  {
-    src: img5,
-    title: "Water Supply Projects at Karonmajigi Village, Abuja",
-    category: "Water Supply",
-  },
-  {
-    src: img6,
-    title: "Water Supply Projects at Karonmajigi Village, Abuja",
-    category: "Water Supply",
-  },
+ 
   {
     src: img7,
     title: "Motorised Borehole Repaired by WBOF at Dutse Alhaji, Abuja",
     category: "Water Supply",
   },
-  {
-    src: img8,
-    title: "Community Latrine Rehabilitation at Rubochi, Abuja — Before",
-    category: "Sanitation",
-    tag: "Before",
-  },
-  {
-    src: img9,
-    title: "Community Latrine Rehabilitation at Rubochi, Abuja — After",
-    category: "Sanitation",
-    tag: "After",
-  },
-  {
-    src: img10,
-    title: "Classrooms Rehabilitation at Ijeun, Abeokuta",
-    category: "Education",
-  },
-  {
-    src: img11,
-    title: "Classrooms Rehabilitation Project at Ijeun, Abeokuta",
-    category: "Education",
-  },
-  {
-    src: img12,
-    title: "School Project at Kobape, Abeokuta",
-    category: "Education",
-  },
-  {
-    src: img13,
-    title: "Odo Ona LEA Primary School, Ibadan — Before",
-    category: "Education",
-    tag: "Before",
-  },
-  {
-    src: img14,
-    title: "Odo Ona LEA Primary School, Ibadan — After",
-    category: "Education",
-    tag: "After",
-  },
-  {
-    src: img15,
-    title: "Primary School, Oke Ado, Ibadan — Before",
-    category: "Education",
-    tag: "Before",
-  },
-  {
-    src: img16,
-    title: "Primary School, Oke Ado, Ibadan — After",
-    category: "Education",
-    tag: "After",
-  },
-  {
-    src: img17,
-    title: "Sensitization of Women on Good Hygiene and Sanitation by WBOF",
-    category: "WASH",
-  },
+ 
   {
     src: img18,
     title: "Downstream of Usuma River Being Cleaned Up",
