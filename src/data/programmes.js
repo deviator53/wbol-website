@@ -39,6 +39,64 @@ import womenHygiene from "../assets/Sensitization of women on good hygiene and s
 
 export const programmes = [
   {
+    slug: "donation-of-school-writing-materials",
+    emoji: "✏️",
+    title: "Donation of Writing Materials for School Students",
+    desc: "Equipping school students with the tools they need to stay in class, stay focused, and stay ahead.",
+    fullDesc: `A pen and a notebook might seem small, but for many students in under-resourced public schools, they are the difference between participating in class and being left behind.
+
+WBOF visited Honourable Olajiire Akintunde Memorial High School in Ibadan and handed writing materials directly to students. Pens, notebooks, pencils, and other key supplies were distributed to ensure no student had to sit through a lesson without the means to engage.
+
+The response from students and teachers alike was immediate — a renewed energy in the classroom that reminded us why even the simplest act of support can carry lasting impact.`,
+    areas: ["Odo Okun, Arapaja, Odo Ona Kekere, Ibadan, Oyo State"],
+    location: "Honourable Olajiire Akintunde Memorial High School",
+    image: schoolStudentImg,
+    gallery: [schoolStudentImg],
+    videos: [studentVideo],
+  },
+  {
+    slug: "donation-of-writing-materials-to-primary-school",
+    emoji: "✏️",
+    title: "Donation of Writing Materials for St. Leo Catholic Primary School",
+    desc: "Reaching the youngest learners first — giving primary school pupils the materials that set the tone for a lifetime of learning.",
+    fullDesc: `Good habits start early. WBOF believes that investing in a child's earliest years of schooling creates a ripple effect that shapes their entire academic journey.
+
+At St. Leo Catholic Primary School, Orita, Ibadan, we went straight to the source — the pupils themselves — distributing pens, pencils, exercise books, and other writing materials in a warm and engaging session. Many of these children had never received new stationery before.
+
+What struck us most was the pride on their faces. These materials weren't just supplies; they were a signal to each child that someone sees them, values their education, and is willing to invest in their future.`,
+    areas: ["Orita, Ibadan, Oyo State"],
+    location: "St. Leo Catholic Primary School, Orita",
+    image: schoolStudentImg1,
+    gallery: [
+      schoolStudentImg1,
+      schoolStudentImg2,
+      schoolStudentImg3,
+      schoolStudentImg6,
+    ],
+    videos: [studentVideo1, studentVideo2],
+  },
+  {
+    slug: "writing-materials-elewura-community-school",
+    emoji: "✏️",
+    title: "Writing Materials for Community Model Basic Primary School",
+    desc: "Taking the classroom further — bringing learning tools to pupils in the heart of a community that needs it most.",
+    fullDesc: `In underserved urban communities, access to school supplies can be just as scarce as in rural areas. WBOF made its way to Community Model Basic Primary School, Elewura Challenge, Ibadan to meet pupils where they are.
+
+Children at this school showed up every day with the will to learn — but often without the materials to do so. WBOF stepped in with a targeted supply of writing materials, placing essentials directly in the hands of pupils who needed them most.
+
+This visit reinforced a core belief we hold: education empowerment is not one-size-fits-all. Every community, every school, every child deserves to be seen individually — and supported accordingly.`,
+    areas: ["Elewura, Ibadan, Oyo State"],
+    location: "Community Model Basic Primary School, Elewura Challenge, Ibadan",
+    image: schoolStudentImg8,
+    gallery: [
+      schoolStudentImg7,
+      schoolStudentImg8,
+      schoolStudentImg9,
+      schoolStudentImg10,
+    ],
+    videos: [studentVideo3],
+  },
+  {
     slug: "rural-water-supply-sanitation",
     emoji: "🚰",
     title: "Rural Water Supply & Sanitation",
@@ -102,63 +160,5 @@ We have conducted clean-ups on major rivers including the Usuma, Imo, and Sokoto
     image: envImg,
     gallery: [envImg, envCleanup, sokotoCleanup, womenHygiene],
   },
-  {
-    slug: "donation-of-school-writing-materials",
-    emoji: "✏️",
-    title: "Donation of Writing Materials for School Students",
-    desc: "Equipping school students with the tools they need to stay in class, stay focused, and stay ahead.",
-    fullDesc: `A pen and a notebook might seem small, but for many students in under-resourced public schools, they are the difference between participating in class and being left behind.
-
-WBOF visited Honourable Olajiire Akintunde Memorial High School in Ibadan and handed writing materials directly to students. Pens, notebooks, pencils, and other key supplies were distributed to ensure no student had to sit through a lesson without the means to engage.
-
-The response from students and teachers alike was immediate — a renewed energy in the classroom that reminded us why even the simplest act of support can carry lasting impact.`,
-    areas: ["Odo Okun, Arapaja, Odo Ona Kekere, Ibadan, Oyo State"],
-    location: "Honourable Olajiire Akintunde Memorial High School",
-    image: schoolStudentImg,
-    gallery: [schoolStudentImg],
-    videos: [studentVideo],
-  },
-  {
-    slug: "donation-of-writing-materials-to-primary-school",
-    emoji: "✏️",
-    title: "Donation of Writing Materials for St. Leo Catholic Primary School",
-    desc: "Reaching the youngest learners first — giving primary school pupils the materials that set the tone for a lifetime of learning.",
-    fullDesc: `Good habits start early. WBOF believes that investing in a child's earliest years of schooling creates a ripple effect that shapes their entire academic journey.
-
-At St. Leo Catholic Primary School, Orita, Ibadan, we went straight to the source — the pupils themselves — distributing pens, pencils, exercise books, and other writing materials in a warm and engaging session. Many of these children had never received new stationery before.
-
-What struck us most was the pride on their faces. These materials weren't just supplies; they were a signal to each child that someone sees them, values their education, and is willing to invest in their future.`,
-    areas: ["Orita, Ibadan, Oyo State"],
-    location: "St. Leo Catholic Primary School, Orita",
-    image: schoolStudentImg1,
-    gallery: [
-      schoolStudentImg1,
-      schoolStudentImg2,
-      schoolStudentImg3,
-      schoolStudentImg4,
-      schoolStudentImg6,
-    ],
-    videos: [studentVideo1, studentVideo2],
-  },
-  {
-    slug: "writing-materials-elewura-community-school",
-    emoji: "✏️",
-    title: "Writing Materials for Community Model Basic Primary School",
-    desc: "Taking the classroom further — bringing learning tools to pupils in the heart of a community that needs it most.",
-    fullDesc: `In underserved urban communities, access to school supplies can be just as scarce as in rural areas. WBOF made its way to Community Model Basic Primary School, Elewura Challenge, Ibadan to meet pupils where they are.
-
-Children at this school showed up every day with the will to learn — but often without the materials to do so. WBOF stepped in with a targeted supply of writing materials, placing essentials directly in the hands of pupils who needed them most.
-
-This visit reinforced a core belief we hold: education empowerment is not one-size-fits-all. Every community, every school, every child deserves to be seen individually — and supported accordingly.`,
-    areas: ["Elewura, Ibadan, Oyo State"],
-    location: "Community Model Basic Primary School, Elewura Challenge, Ibadan",
-    image: schoolStudentImg8,
-    gallery: [
-      schoolStudentImg7,
-      schoolStudentImg8,
-      schoolStudentImg9,
-      schoolStudentImg10,
-    ],
-    videos: [studentVideo3],
-  },
+  
 ];
