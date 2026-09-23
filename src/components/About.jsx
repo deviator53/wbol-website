@@ -1,5 +1,8 @@
+import { useState, useEffect, useCallback } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import waterSupplyImg from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA.png";
+import { projects } from "../data/programmesSliders";
 
 const checks = [
   "Improved rural water supply and sanitation",
@@ -9,17 +12,64 @@ const checks = [
 ];
 
 export default function About() {
+   const [current, setCurrent] = useState(0);
+    const [paused, setPaused] = useState(false);
+  
+    const isVideo = (item) => item.type === "video";
+  
+    const next = useCallback(
+      () => setCurrent((c) => (c === projects.length - 1 ? 0 : c + 1)),
+      [],
+    );
+    const prev = () => setCurrent((c) => (c === 0 ? projects.length - 1 : c - 1));
+  
+    useEffect(() => {
+      if (paused) return;
+      const timer = setInterval(next, 4000);
+      return () => clearInterval(timer);
+    }, [paused, next]);
+  
+    const p = projects[current];
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-16 items-center">
         {/* Image side */}
         <div className="relative">
-          <div className="rounded-xl overflow-hidden h-[420px]">
-            <img
+          <div
+            className="rounded-xl overflow-hidden h-[420px]"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+          >
+            {isVideo(p) ? (
+              <video
+                key={current}
+                src={p.src}
+                controls
+                autoPlay
+                muted
+                playsInline
+                className="w-full h-[360px] object-cover bg-black"
+                onPlay={() => setPaused(true)}
+                onPause={() => setPaused(false)}
+                onEnded={() => {
+                  setPaused(false);
+                  next();
+                }}
+              />
+            ) : (
+              <img
+                key={current}
+                src={p.src}
+                alt={p.title}
+                className="w-full h-full object-cover"
+              />
+            )}
+            {/* <img
               src={waterSupplyImg}
               alt="Water Supply Projects at Karonmajigi Village, Abuja"
               className="w-full h-full object-cover"
-            />
+            /> */}
           </div>
           {/* Badge */}
         </div>
@@ -34,8 +84,8 @@ export default function About() {
           <p className="text-gray-500 leading-relaxed mb-6">
             WBOF is primarily established to make life better for everyone —
             especially children, women, and the disadvantaged living in
-            semi-urban and rural areas of Nigeria. Through donations and gifts of
-            clean water, education, and environmental empowerment, we believe
+            semi-urban and rural areas of Nigeria. Through donations and gifts
+            of clean water, education, and environmental empowerment, we believe
             every person deserves to thrive.
           </p>
 
