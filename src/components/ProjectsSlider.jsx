@@ -143,22 +143,85 @@ const projects = [
   { src: img21, title: "WBOF Field Activity", category: "Field Work" },
   {
     src: img22,
-    title: "Writing Materials — Honourable Olajiire Akintunde Memorial High School, Ibadan",
+    title:
+      "Writing Materials — Honourable Olajiire Akintunde Memorial High School, Ibadan",
     category: "Education",
   },
-  { src: img23, title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan", category: "Education" },
-  { src: img24, title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan", category: "Education" },
-  { src: img25, title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan", category: "Education" },
-  { src: img26, title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan", category: "Education" },
-  { src: img27, title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan", category: "Education" },
-  { src: img28, title: "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan", category: "Education" },
-  { src: img29, title: "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan", category: "Education" },
-  { src: img30, title: "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan", category: "Education" },
-  { src: img31, title: "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan", category: "Education" },
-  { src: video1, type: "video", title: "Writing Materials — Honourable Olajiire Akintunde Memorial High School, Ibadan", category: "Education" },
-  { src: video2, type: "video", title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan", category: "Education" },
-  { src: video3, type: "video", title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan", category: "Education" },
-  { src: video4, type: "video", title: "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan", category: "Education" },
+  {
+    src: img23,
+    title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan",
+    category: "Education",
+  },
+  {
+    src: img24,
+    title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan",
+    category: "Education",
+  },
+  {
+    src: img25,
+    title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan",
+    category: "Education",
+  },
+  {
+    src: img26,
+    title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan",
+    category: "Education",
+  },
+  {
+    src: img27,
+    title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan",
+    category: "Education",
+  },
+  {
+    src: img28,
+    title:
+      "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan",
+    category: "Education",
+  },
+  {
+    src: img29,
+    title:
+      "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan",
+    category: "Education",
+  },
+  {
+    src: img30,
+    title:
+      "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan",
+    category: "Education",
+  },
+  {
+    src: img31,
+    title:
+      "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan",
+    category: "Education",
+  },
+  {
+    src: video1,
+    type: "video",
+    title:
+      "Writing Materials — Honourable Olajiire Akintunde Memorial High School, Ibadan",
+    category: "Education",
+  },
+  {
+    src: video2,
+    type: "video",
+    title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan",
+    category: "Education",
+  },
+  {
+    src: video3,
+    type: "video",
+    title: "Writing Materials — St. Leo Catholic Primary School, Orita, Ibadan",
+    category: "Education",
+  },
+  {
+    src: video4,
+    type: "video",
+    title:
+      "Writing Materials — Community Model Basic Primary School, Elewura, Ibadan",
+    category: "Education",
+  },
 ];
 
 const tagColors = { Before: "bg-orange-500", After: "bg-[#39A84F]" };
