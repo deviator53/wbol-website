@@ -35,7 +35,7 @@ export default function Navbar() {
               <Mail size={12} /> wbof.foundation@gmail.com
             </span>
           </div>
-          <span>Community &amp; Global Consortia</span>
+          <span>Humanitarian Support &amp; Services</span>
         </div>
       </div>
 
