@@ -14,7 +14,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-white/75 max-w-xl text-sm leading-relaxed">
             Whether you want to volunteer, partner, or simply reach out — we'd
-            love to hear from you.
+            love to hear from you. Join our non-profit initiative giving back to the community.
           </p>
         </div>
       </section>

@@ -101,7 +101,7 @@ export default function FocusAreas() {
             Areas of <span className="text-[#39A84F]">Intervention</span>
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
-            Every action we take is guided by our commitment to sustainable,
+            Our strategic areas of humanitarian support and services — a non-profit initiative giving back to the community through sustainable,
             community-led development across Nigeria's most underserved regions.
           </p>
         </div>

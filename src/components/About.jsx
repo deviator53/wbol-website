@@ -82,11 +82,11 @@ export default function About() {
             <span className="text-[#39A84F]">Foundation</span>
           </h2>
           <p className="text-gray-500 leading-relaxed mb-6">
-            WBOF is primarily established to make life better for everyone —
+            WBOF is a non-profit initiative primarily established to make life better for everyone —
             especially children, women, and the disadvantaged living in
-            semi-urban and rural areas of Nigeria. Through donations and gifts
-            of clean water, education, and environmental empowerment, we believe
-            every person deserves to thrive.
+            semi-urban and rural areas of Nigeria. Through humanitarian support and services,
+            we give back to the community by donating clean water access, education, and
+            environmental empowerment, because we believe every person deserves to thrive.
           </p>
 
           <ul className="space-y-3 mb-8">
