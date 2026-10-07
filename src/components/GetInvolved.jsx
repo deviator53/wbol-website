@@ -47,7 +47,7 @@ export default function GetInvolved() {
           </h2>
           <p className="text-gray-500 text-sm leading-relaxed mb-8">
             Whether you want to volunteer, partner, or simply reach out — we are
-            a charity-driven foundation gifting clean water, education, and
+            a non-profit initiative providing humanitarian support and services, giving back to the community by gifting clean water, education, and
             environmental empowerment to communities across Nigeria at no cost to them.
           </p>
 

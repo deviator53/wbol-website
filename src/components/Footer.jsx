@@ -26,7 +26,7 @@ export default function Footer() {
           How Can We Help Your Community?
         </h2>
         <p className="text-white/85 text-sm max-w-md mx-auto mb-6">
-          We donate boreholes, classroom renovations, and river clean-ups to communities across Nigeria — empowerment gifts at no cost to the people we serve.
+          A non-profit initiative providing humanitarian support and services — donating boreholes, classroom renovations, and river clean-ups as acts of giving back to the community across Nigeria.
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <Link
@@ -56,7 +56,7 @@ export default function Footer() {
             />
           </Link>
           <p className="text-white/60 text-xs leading-relaxed">
-            Walter Bamidele Olatunji Foundation — making life better for
+            Walter Bamidele Olatunji Foundation — a non-profit initiative providing humanitarian support and services, giving back to the community by making life better for
             children, women, and the disadvantaged in rural Nigeria.
           </p>
         </div>

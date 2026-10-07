@@ -71,14 +71,14 @@ export default function Hero() {
         {/* Left */}
         <div>
           <span className="inline-block bg-[#39A84F]/20 border border-[#39A84F] text-[#7de896] text-xs px-4 py-1.5 rounded-full uppercase tracking-widest mb-5">
-            Walter Bamidele Olatunji Foundation
+            Non-Profit Initiative · Humanitarian Support &amp; Services
           </span>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-5">
             Clean Water, <span className="text-[#39A84F]">Better Lives</span>{" "}
             for Everyone
           </h1>
           <p className="text-white/85 text-base leading-relaxed mb-8 max-w-lg">
-            Donating boreholes, classroom renovations, and environmental clean-ups to underprivileged communities — empowering people through gifts of clean water, education, and a healthier environment.
+            A non-profit initiative dedicated to humanitarian support and services — donating boreholes, classroom renovations, and environmental clean-ups to underprivileged communities as acts of giving back to the community.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href="#programmes" className="btn-primary">

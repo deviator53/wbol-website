@@ -21,7 +21,7 @@ export default function Programmes() {
             Our <span className="text-[#39A84F]">Programmes</span>
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm leading-relaxed">
-            Our strategic areas of intervention designed to create lasting
+            Our strategic areas of humanitarian support and services — a non-profit initiative giving back to the community through lasting
             change in rural and semi-urban communities across Nigeria.
           </p>
         </div>
