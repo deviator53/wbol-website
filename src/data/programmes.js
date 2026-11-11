@@ -11,11 +11,16 @@ import schoolStudentImg7 from "../assets/school-student8.jpeg";
 import schoolStudentImg8 from "../assets/school-student9.jpeg";
 import schoolStudentImg9 from "../assets/school-student10.jpeg";
 import schoolStudentImg10 from "../assets/school-student11.jpeg";
+import schoolStudentImg11 from "../assets/school-student12.jpg";
+import schoolStudentImg12 from "../assets/school-student13.jpg";
+import schoolStudentImg13 from "../assets/school-student14.jpg";
+import schoolStudentImg14 from "../assets/school-student15.jpg";
 
 import studentVideo from "../assets/student-video.mp4";
 import studentVideo1 from "../assets/student-video2.mp4";
 import studentVideo2 from "../assets/student-video3.mp4";
 import studentVideo3 from "../assets/student-video4.mp4";
+import studentVideo4 from "../assets/student-video5.mp4";
 
 import water2 from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA.png";
 import water3 from "../assets/WATER SUPPLY PROJECTS AT KARONMAJIGI VILLAGE, ABUJA 2.png";
@@ -95,6 +100,29 @@ This visit reinforced a core belief we hold: education empowerment is not one-si
       schoolStudentImg10,
     ],
     videos: [studentVideo3],
+  },
+  {
+    slug: "writing-materials-mount-faith-primary-school",
+    emoji: "✏️",
+    title: "Donation of Writing Materials for Mount Faith Primary School",
+    desc: "Bringing essential learning tools to pupils at Mount Faith Primary School, Kabusa, Abuja — because every child deserves to learn with the right materials.",
+    fullDesc: `Education cannot wait — and neither can the children who show up every day ready to learn. WBOF visited Mount Faith Primary School in Kabusa, Abuja, to donate writing materials directly to pupils who need them most.
+
+Pens, pencils, notebooks, and other essential stationery were handed to students in a session that reminded us why grassroots education support matters. For many of these children, receiving brand-new materials is a rare and meaningful experience.
+
+Kabusa is a community that often falls outside the reach of government education initiatives. WBOF's presence there was a deliberate choice — to ensure that geographical and economic barriers do not determine which children get to participate fully in their own education.
+
+This programme continues our commitment to empowering learners across Nigeria, one school at a time.`,
+    areas: ["Kabusa, Abuja, FCT"],
+    location: "Mount Faith Primary School, Kabusa, Abuja",
+    image: schoolStudentImg11,
+    gallery: [
+      schoolStudentImg11,
+      schoolStudentImg12,
+      schoolStudentImg13,
+      schoolStudentImg14,
+    ],
+    videos: [studentVideo4],
   },
   {
     slug: "rural-water-supply-sanitation",
