@@ -3,6 +3,7 @@ import { ArrowRight, Droplets, BookOpen, Leaf, PencilLine } from "lucide-react";
 import { programmes } from "../data/programmes";
 
 const icons = {
+  "writing-materials-mount-faith-primary-school": <PencilLine size={22} />,
   "donation-of-school-writing-materials": <PencilLine size={22} />,
   "donation-of-writing-materials-to-primary-school": <PencilLine size={22} />,
   "writing-materials-elewura-community-school": <PencilLine size={22} />,
